@@ -1,71 +1,41 @@
-<?php
-wp_head();
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><?php the_title() ?></title>
 
-
-<header>
-    <div class="container">
+  <?php
+  wp_head();
+  ?>
+</head>
+<body <?php body_class(); ?>>
+<header class="header-filter">
      <section class="top-bar">
-     
-     <div class="social-media-icons"></div>
-     <div class="search"></div>
+     <div class="container">
+<div class="row">
+     <div class="social-media-icons col-xl-10 col-md-8 col-sm-8 col-6">Social Icons</div>
+     <div class="search col-xl-2 col-md-4 col-sm-4 col-6 text-right">Search</div>
+     </div>
+</div>
      </section>
      <section class="menu-area">
-     <section class="logo"></section>
-     <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
-    <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-          Material Kit </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">apps</i> Components
-            </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a href="./index.html" class="dropdown-item">
-                <i class="material-icons">layers</i> All Components
-              </a>
-              <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                <i class="material-icons">content_paste</i> Documentation
-              </a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
-              <i class="material-icons">cloud_download</i> Download
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook">
-              <i class="fa fa-facebook-square"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
-              <i class="fa fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-     <nav id="site-navigation" class="main-menu" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'dusk' ); ?>">
-								
-							</nav>     
-     </section>
-     </header>
+
+     <div class="container">
+     <div class="align">
+       <div class="row">
+        
+         <section class="logo col-md-2 col-sm-12 col-12 "><?php the_custom_logo();?></section>
+     <nav class="main-menu col-md-10 text-right">
+
+     <?php wp_nav_menu( array('theme_location'=>'my_main_menu'));?>
+     </nav>
+     
      </div>
+     </div>
+
+     </div>
+     </section>
+
+     </header>

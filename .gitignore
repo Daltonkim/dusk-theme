@@ -1,27 +1,26 @@
+#node 
+node_modules
+package.json
 
-<?php get_header(); ?>
 
-
-     <div class="content-area">
-     <div class="container">
-         <main>
-         <section class="slider">Slider</section>
+<section class="slider">Slider</section>
          <section class="services">services</section>
          <section class="middle-area">
 <div class="container">
-<aside class="sidebar">Sidebar </aside>
 <div class="row">
+<aside class="sidebar">Sidebar </aside>
 
-<div class="align">
-<div class="news  column">
+</div>
+
+</div>
+              <div class="news col-md-9">
                   <?php
                     if (have_posts()) :
                         while (have_posts()) : the_post();
 
                     ?>
                   <!-- here format of the posts-->
-                  <article class="col-md-4">
-                      <?php  ?>
+                  <article>
                       <h2><?php the_title(); ?></h2>
                       <p>Posted in <?php echo get_the_date(); ?> by <?php the_author_posts_link(); ?> </p>
                       <p>Categories <?php the_category(' '); ?></p>
@@ -42,21 +41,19 @@
                     endif;
 
                     ?>
-                  </div>                  
-</div>
-</div>
- </div>
+                  <div>
 
-</section>
-    
-<div class="container">
+              <a class="btn btn-primary" href="#">Press me</a>
+              
+             </div></div>
+         </section>
+         <div class="container">
+          <div class="row">
+          <section class="map">
 
-<div class="row">
+          
+          </section>
 
-<section class="map">Map</section>
- </div>
-</div>
-</main>
-     </div>
-</div>
- <?php get_footer(); ?>
+          </div>
+
+         </div>

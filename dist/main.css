@@ -1,0 +1,8 @@
+.top-bar {
+  background-color: aquamarine; }
+
+.content-area {
+  align-content: center; }
+
+.main-menu ul li, .footer-menu ul li {
+  display: inline; }
