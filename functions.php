@@ -35,8 +35,8 @@ function theme_prefix_setup(){
 add_theme_support('custom-logo', array(
       'height'=> 52,
       'width' => 52,
-    'flex-height'=> true,
-     'flex-width'->true,
+      'flex-height'=> true,
+      'flex-width'->true,
 ));
 }
 
