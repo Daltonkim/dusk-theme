@@ -30,8 +30,7 @@ register_nav_menus(
 );
 function theme_prefix_setup(){
 add_theme_support('custom-logo', array(
-      'height'=> 52,
-      'width' => 52,
+      'width' => 90,
       'flex-height'=> true,
       'flex-width'->true,
 ));

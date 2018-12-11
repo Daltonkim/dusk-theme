@@ -51,13 +51,28 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 17.0 - Print
  */
 
- .posts-loop {
+.posts-loop {
     float: left;
     max-width: 50%;
 }
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
     .posts-loop {
         float: left;
         max-width: 100%;
     }
+}
+
+.menu-area {
+    background-color: #ffff;
+}
+
+a {
+    color: black;
+
+}
+.menu-menu-container {
+    float: right;
+    position: relative;
+    top: 22px;
 }

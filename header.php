@@ -8,7 +8,7 @@
     <?php wp_head();  ?>
   </head>
 <body <?php body_class(); ?> class="dusk_container">
-  <header class="header-filter">
+  <header class="main-header">
     <section class="top-bar">
       <div class="container">
         <div class="row">
@@ -22,7 +22,7 @@
         <div class="row">
             <section class="logo col-md-2 col-sm-12 col-12 "><?php the_custom_logo();?></section>
               <nav class="main-menu col-md-10 text-right">
-                <?php wp_nav_menu( array('theme_location'=>'my_main_menu'));?>
+                <?php wp_nav_menu( array('theme_location'=>'my_main_menu', 'item_spacing'=>"preserve"));?>
               </nav>
         </div>
       </div>
