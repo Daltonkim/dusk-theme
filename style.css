@@ -50,3 +50,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *    16.7 - Desktop X-Large
  * 17.0 - Print
  */
+
+ .posts-loop {
+    float: left;
+    max-width: 50%;
+}
+@media only screen and (max-width: 768px){
+    .posts-loop {
+        float: left;
+        max-width: 100%;
+    }
+}
